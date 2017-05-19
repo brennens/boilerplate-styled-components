@@ -1,12 +1,5 @@
-# Boilerplate
-Base starting point for simple project
+# Boilerplate - Styled Components
+Starting to build a boilerplate using styled-components
 
 - npm install
 - npm start
-
-No longer need to worry about vendor prefixes. Now using Autoprefixer
-
-
-##### Next Step
-- add in react-router
-- add in styled-components
