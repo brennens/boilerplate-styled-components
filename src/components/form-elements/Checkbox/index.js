@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-const Checkbox = styled.input`
+const Checkbox = styled.input.attrs({
+  type: 'checkbox',
+})`
   border: solid 1px ${props => props.theme.primary};
   display: block;
   font-size: 1.6rem;

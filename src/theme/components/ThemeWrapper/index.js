@@ -2,12 +2,12 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../../theme'
 
-const PrimaryTheme = (props) => {
+const ThemeWrapper = (props) => {
   return (
-    <ThemeProvider theme={theme.theme.dark}>
+    <ThemeProvider theme={theme.theme.winter}>
       {props.children}
     </ThemeProvider>
   );
 }
 
-export default PrimaryTheme;
+export default ThemeWrapper;
