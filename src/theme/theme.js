@@ -2,7 +2,6 @@
 // APP STYLE CONSTANTS
 // ==============================
 
-// color
 const color = {
   summerPink: '#e85a71',
   summerAqua: '#4ea1d3',
@@ -41,24 +40,28 @@ const theme = {
     secondary: color.summerAqua,
     tertiary: color.summerPaleBlue,
     quaternary: color.summerMidnight,
+    neutral: neutral,
   },
   spring: {
     primary: color.springGreen,
     secondary: color.springPink,
     tertiary: color.springPurple,
     quaternary: color.springBlue,
+    neutral: neutral,
   },
   winter: {
     primary: color.winterBlue,
     secondary: color.winterGreen,
     tertiary: color.winterDusk,
     quaternary: color.winterMidnight,
+    neutral: neutral,
   },
   fall: {
     primary: color.fallYellow,
     secondary: color.fallPink,
     tertiary: color.fallPurple,
     quaternary: color.fall,
+    neutral: neutral,
   }
 }
 

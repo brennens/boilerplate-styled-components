@@ -1,10 +1,17 @@
 import React from 'react';
 import { Component } from 'react';
-import InputGroup from '../form-elements/InputGroup';
-import Label from '../form-elements/Label';
-import Textfield from '../form-elements/Textfield';
-import Textarea from '../form-elements/Textarea';
-import Checkbox from '../form-elements/Checkbox';
+import FormElements, {
+  InputGroup,
+  Label,
+  Textfield,
+  Textarea,
+  CheckboxWrapper,
+  CheckboxInput,
+  CheckboxControl,
+  RadioWrapper,
+  RadioInput,
+  RadioControl,
+} from '../FormElements';
 
 
 class Home extends Component {
@@ -21,7 +28,19 @@ class Home extends Component {
         </InputGroup>
         <InputGroup>
           <Label>Checkbox</Label>
-          <Checkbox />
+          <CheckboxWrapper>
+            <CheckboxInput />
+            <CheckboxControl />
+            I am a checkbox
+          </CheckboxWrapper>
+        </InputGroup>
+        <InputGroup>
+          <Label>Radio</Label>
+          <RadioWrapper>  
+            <RadioInput />
+            <RadioControl />
+            I am a radio
+          </RadioWrapper>
         </InputGroup>
       </div>
     );

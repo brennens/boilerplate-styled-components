@@ -4,7 +4,7 @@ import theme from '../../theme'
 
 const ThemeWrapper = (props) => {
   return (
-    <ThemeProvider theme={theme.theme.winter}>
+    <ThemeProvider theme={theme.theme.summer}>
       {props.children}
     </ThemeProvider>
   );
