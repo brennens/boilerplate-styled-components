@@ -10,6 +10,11 @@ Starting to build a boilerplate using styled-components
 - Created Summer, Spring, Winter, Fall Themes
 - Added in Media Queries
 
+### Updates 6/14/2017
+- Put form components into one file
+- Changed name of sizes to media-queries
+- Added in neutral colors to each theme
+
 #### Pitfalls
 - Can't use Sass variables.
 - Could use CSS Variables, but IE doesn't support it yet. HATE IE
