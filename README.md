@@ -1,5 +1,5 @@
 # Boilerplate - Styled Components
-Starting to build a boilerplate using styled-components
+Starting boilerplate using styled-components
 
 - npm install
 - npm start
@@ -15,6 +15,13 @@ Starting to build a boilerplate using styled-components
 - Changed name of sizes to media-queries
 - Added in neutral colors to each theme
 
-#### Pitfalls
-- Can't use Sass variables.
-- Could use CSS Variables, but IE doesn't support it yet. HATE IE
+### Updates 7/4/2017
+- Removed all SASS/CSS Files
+- Updated webpack to account for not needing style loaders
+- Started working on layouts (base)
+
+### TO DO
+- Clean up the global injection
+- Remove structure configs to a layouts folder
+- Add in React Router
+
