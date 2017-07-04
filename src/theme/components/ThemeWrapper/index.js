@@ -1,10 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import theme from '../../theme'
+import theme from '../../../theme';
 
 const ThemeWrapper = (props) => {
   return (
-    <ThemeProvider theme={theme.theme.summer}>
+    <ThemeProvider theme={theme.theme.spring}>
       {props.children}
     </ThemeProvider>
   );

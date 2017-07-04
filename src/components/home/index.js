@@ -12,12 +12,32 @@ import FormElements, {
   RadioInput,
   RadioControl,
 } from '../FormElements';
+import StyledLink from '../Links';
+import Button, {
+  PrimaryButton,
+  SecondaryButton,
+  TertiaryButton,
+  QuaternaryButton
+} from '../Buttons';
+import Content from '../Content';
+import Flexbox from '../Flexbox';
 
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <Content>
+        <StyledLink>I am a link</StyledLink>
+        <Flexbox>
+          <PrimaryButton>Button</PrimaryButton>
+          <SecondaryButton>Button</SecondaryButton>
+          <TertiaryButton>Button</TertiaryButton>
+          <QuaternaryButton>Button</QuaternaryButton>
+          <PrimaryButton hollow>Button</PrimaryButton>
+          <SecondaryButton hollow>Button</SecondaryButton>
+          <TertiaryButton hollow>Button</TertiaryButton>
+          <QuaternaryButton hollow>Button</QuaternaryButton>
+        </Flexbox>
         <InputGroup>
           <Label>Textfield</Label>
           <Textfield />
@@ -42,7 +62,7 @@ class Home extends Component {
             I am a radio
           </RadioWrapper>
         </InputGroup>
-      </div>
+      </Content>
     );
   }
 }

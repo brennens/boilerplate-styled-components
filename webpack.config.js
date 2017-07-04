@@ -29,21 +29,21 @@ var config = {
         test: /\.html$/,
         loader: 'html-loader'
       },
-      {
-        test: /\.(scss|css)$/,
-        include: APP_DIR,
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            {
-              loader: 'postcss-loader',
-              options: { plugins: [require('autoprefixer')({ browsers: ['last 2 versions'] })] },
-            },
-            'sass-loader',
-          ]
-        })
-      },
+      // {
+      //   test: /\.(scss|css)$/,
+      //   include: APP_DIR,
+      //   loader: ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: [
+      //       'css-loader',
+      //       {
+      //         loader: 'postcss-loader',
+      //         options: { plugins: [require('autoprefixer')({ browsers: ['last 2 versions'] })] },
+      //       },
+      //       'sass-loader',
+      //     ]
+      //   })
+      // },
       {
         test: /\.(png|jpg|gif|ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
         loader: "file-loader"
@@ -54,7 +54,7 @@ var config = {
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
-    new ExtractTextPlugin('main.css'),
+    // new ExtractTextPlugin('main.css'),
   ]
 };
 
