@@ -1,9 +1,13 @@
 import React from 'react';
 import { Component } from 'react';
 import styled from 'styled-components';
+import { Switch, Route } from 'react-router-dom'
 
 import HeaderWrap from '../components/Header';
-import Home from '../components/Home';
+import HomePage from '../pages/HomePage';
+import FormElementsPage from '../pages/FormElementsPage';
+import LinksPage from '../pages/LinksPage';
+import ButtonsPage from '../pages/ButtonsPage';
 import FooterWrap from '../components/Footer';
 
 
@@ -20,7 +24,12 @@ class Base extends Component {
     return (
       <Wrapper>
         <HeaderWrap />
-        <Home />
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/form-elements' component={FormElementsPage} />
+          <Route path='/links' component={LinksPage} />
+          <Route path='/buttons' component={ButtonsPage} />
+        </Switch>
         <FooterWrap />
       </Wrapper>
     );

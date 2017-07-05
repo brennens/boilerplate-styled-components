@@ -23,5 +23,5 @@ Starting boilerplate using styled-components
 ### TO DO
 - Clean up the global injection
 - Remove structure configs to a layouts folder
-- Add in React Router
+- Create a style-components function for the GridMachine Sass Mixin
 
