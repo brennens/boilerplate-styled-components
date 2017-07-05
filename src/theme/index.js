@@ -4,33 +4,9 @@
 
 import { injectGlobal } from 'styled-components';
 
-injectGlobal`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  html {
-    font-size: 10px;
-  }
-
-  body {
-    font-family: -apple-sytem,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  h1,h2,h3,h4,h5,h6{
-      font-weight: normal;
-  }
-`;
-
 const config = {
   header: '100px',
-	footer: '100px',
+	footer: '50px',
 	sidebar: '300px'
 }
 
@@ -96,6 +72,32 @@ const theme = {
     neutral: neutral,
   }
 }
+
+injectGlobal`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    background: ${neutral.white};
+    color: ${neutral.gray80};
+    font-family: -apple-sytem,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+  }
+`;
 
 export default {
   config,

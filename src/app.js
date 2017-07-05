@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import ThemeWrapper from './theme/components/ThemeWrapper';
 
 import Base from './layout/Base';
@@ -9,9 +9,9 @@ import Base from './layout/Base';
 
 ReactDOM.render(
   <ThemeWrapper>
-    <BrowserRouter>
+    <HashRouter>
       <Base />
-    </BrowserRouter>
+    </HashRouter>
   </ThemeWrapper>,
   document.querySelector('.bs-content')
 );

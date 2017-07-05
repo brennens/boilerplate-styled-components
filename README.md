@@ -21,7 +21,9 @@ Starting boilerplate using styled-components
 - Started working on layouts (base)
 
 ### TO DO
-- Clean up the global injection
-- Remove structure configs to a layouts folder
 - Create a style-components function for the GridMachine Sass Mixin
+- Create a modal
+- Create a carousel
+- Create toast notifications
+- Look into the best way to handle icons
 
