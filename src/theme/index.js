@@ -2,12 +2,16 @@
 // APP STYLE CONSTANTS
 // ==============================
 
-import { injectGlobal } from 'styled-components';
+import { injectGlobal } from 'styled-components'
+import { darken, lighten } from 'polished'
+
+const shade = 0.15
+const bright = 0.3
 
 const config = {
   header: '100px',
-	footer: '50px',
-	sidebar: '300px'
+  footer: '50px',
+  sidebar: '300px',
 }
 
 const color = {
@@ -19,6 +23,14 @@ const color = {
   springPink: '#EE7785',
   springPurple: '#C89EC4',
   springBlue: '#84B1ED',
+  springGreenDark: `${darken(shade, '#67D5B5')}`,
+  springPinkDark: `${darken(shade, '#EE7785')}`,
+  springPurpleDark: `${darken(shade, '#C89EC4')}`,
+  springBlueDark: `${darken(shade, '#84B1ED')} `,
+  springGreenLight: `${lighten(bright, '#67D5B5')}`,
+  springPinkLight: `${lighten(bright, '#EE7785')}`,
+  springPurpleLight: `${lighten(bright, '#C89EC4')}`,
+  springBlueLight: `${lighten(bright, '#84B1ED')} `,
   fallYellow: '#FFBC42',
   fallPink: '#D81159',
   fallPurple: '#8F2D56',
@@ -26,21 +38,21 @@ const color = {
   winterBlue: '#47b8e0',
   winterGreen: '#55967e',
   winterMidnight: '263959',
-};
+}
 
 const neutral = {
   white: '#FFFFFF',
-  gray10: '#DCDCDC',
-  gray20: '#D0D0D0',
-  gray30: '#BEBEBE',
-  gray40: '#A9A9A9',
-  gray50: '#989898',
-  gray60: '#808080',
-  gray70: '#696969',
-  gray80: '#585858',
-  gray90: '#404040',
+  gray10: `${lighten(0.9, '#000000')}`,
+  gray20: `${lighten(0.8, '#000000')}`,
+  gray30: `${lighten(0.7, '#000000')}`,
+  gray40: `${lighten(0.6, '#000000')}`,
+  gray50: `${lighten(0.5, '#000000')}`,
+  gray60: `${lighten(0.4, '#000000')}`,
+  gray70: `${lighten(0.3, '#000000')}`,
+  gray80: `${lighten(0.2, '#000000')}`,
+  gray90: `${lighten(0.1, '#000000')}`,
   black: '#000000',
-};
+}
 
 const theme = {
   summer: {
@@ -55,6 +67,14 @@ const theme = {
     secondary: color.springPink,
     tertiary: color.springPurple,
     quaternary: color.springBlue,
+    primaryDark: color.springGreenDark,
+    secondaryDark: color.springPinkDark,
+    tertiaryDark: color.springPurpleDark,
+    quaternaryDark: color.springBlueDark,
+    primaryLight: color.springGreenLight,
+    secondaryLight: color.springPinkLight,
+    tertiaryLight: color.springPurpleLight,
+    quaternaryLight: color.springBlueLight,
     neutral: neutral,
   },
   winter: {
@@ -70,7 +90,7 @@ const theme = {
     tertiary: color.fallPurple,
     quaternary: color.fall,
     neutral: neutral,
-  }
+  },
 }
 
 injectGlobal`
@@ -97,11 +117,11 @@ injectGlobal`
   h1,h2,h3,h4,h5,h6{
     font-weight: normal;
   }
-`;
+`
 
 export default {
   config,
   color,
   neutral,
   theme,
-};
+}

@@ -1,16 +1,14 @@
-import React from 'react';
-import { Component } from 'react';
-import StyledLink from '../../components/Links';
-import Content from '../../components/Content';
-
+import React, { Component } from 'react'
+import StyledLink from '../../components/Links'
+import Content from '../../components/Content'
 
 class LinksPage extends Component {
-  render() {
+  render () {
     return (
       <Content>
         <StyledLink>I am a link</StyledLink>
       </Content>
-    );
+    )
   }
 }
 

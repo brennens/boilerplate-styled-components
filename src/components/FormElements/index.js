@@ -1,16 +1,16 @@
-import styled from 'styled-components';
-import media from '../../media-queries';
+import styled from 'styled-components'
+import media from '../../media-queries'
 
-const FormElements = {};
+const FormElements = {}
 
 const InputGroup = styled.div`
   margin: 20px 0 0;
-`;
+`
 
 const Label = styled.label`
   display: block;
   color: ${props => props.theme.primary};
-`;
+`
 
 const Textfield = styled.input`
   border: solid 1px ${props => props.theme.primary};
@@ -22,7 +22,7 @@ const Textfield = styled.input`
   ${media.desktop`
     border: solid 1px ${props => props.theme.secondary};
   `}
-`;
+`
 
 const Textarea = styled.textarea`
   border: solid 1px ${props => props.theme.primary};
@@ -33,7 +33,7 @@ const Textarea = styled.textarea`
   max-width: 100%;
   padding: 5px;
   width: 100%;
-`;
+`
 
 const CheckboxWrapper = styled.label`
   cursor: pointer;
@@ -53,7 +53,7 @@ const CheckboxWrapper = styled.label`
     top: 3px;
     width: 12px;
   }
-`;
+`
 
 const CheckboxInput = styled.input.attrs({
   type: 'checkbox',
@@ -61,7 +61,7 @@ const CheckboxInput = styled.input.attrs({
   position: absolute;
   opacity: 0;
   z-index: -1;
-`;
+`
 
 const CheckboxControl = styled.span`
   background-color: ${props => props.theme.neutral.white};
@@ -74,13 +74,13 @@ const CheckboxControl = styled.span`
   top: 0;
   width: 20px;
   user-select: none;
-`;
+`
 
 const RadioWrapper = styled.label`
-	cursor: pointer;
-	display: block;
+  cursor: pointer;
+  display: block;
   position: relative;
-	padding-left: 24px;
+  padding-left: 24px;
   input:checked ~ span {
     background: transparent;
   }
@@ -96,15 +96,15 @@ const RadioWrapper = styled.label`
     width: 12px;
     z-index: 1;
   }
-`;
+`
 
 const RadioInput = styled.input.attrs({
   type: 'radio',
 })`
-	opacity: 0;
+  opacity: 0;
   position: absolute;
-	z-index: -1;
-`;
+  z-index: -1;
+`
 
 const RadioControl = styled.span`
   border: solid 1px ${props => props.theme.primary};
@@ -116,7 +116,7 @@ const RadioControl = styled.span`
   top: 0;
   width: 20px;
   user-select: none;
-`;
+`
 
 export {
   FormElements as default,

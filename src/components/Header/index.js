@@ -1,8 +1,7 @@
-import React from 'react';
-import { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from 'react'
+import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import theme from '../../theme';
+import theme from '../../theme'
 
 const Header = styled.header`
   align-items: center;
@@ -11,15 +10,15 @@ const Header = styled.header`
   flex-direction: column;
   height: ${props => theme.config.header};
   justify-content: center;
-`;
+`
 
 const H1 = styled.h1`
   color: ${props => props.theme.primary}
-`;
+`
 
 const Nav = styled.nav`
   margin-top: 20px;
-`;
+`
 
 const StyledLink = styled(NavLink)`
   color: ${props => props.theme.secondary};
@@ -28,11 +27,10 @@ const StyledLink = styled(NavLink)`
   &.is-active {
     text-decoration: underline;
   }
-`;
-
+`
 
 class HeaderWrap extends Component {
-  render() {
+  render () {
     return (
       <Header>
         <H1>Styled Components Boilerplate</H1>
@@ -43,7 +41,7 @@ class HeaderWrap extends Component {
           <StyledLink exact to='/buttons' activeClassName='is-active'>Buttons</StyledLink>
         </Nav>
       </Header>
-    );
+    )
   }
 }
 

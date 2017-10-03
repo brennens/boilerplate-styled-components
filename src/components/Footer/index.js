@@ -1,6 +1,5 @@
-import React from 'react';
-import { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from 'react'
+import styled from 'styled-components'
 import theme from '../../theme'
 
 const Footer = styled.footer`
@@ -12,16 +11,15 @@ const Footer = styled.footer`
   span {
     color: ${props => props.theme.neutral.white};
   }
-`;
-
+`
 
 class FooterWrap extends Component {
-  render() {
+  render () {
     return (
       <Footer>
         <span>By BS</span>
       </Footer>
-    );
+    )
   }
 }
 

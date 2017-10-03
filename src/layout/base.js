@@ -1,26 +1,22 @@
-import React from 'react';
-import { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Switch, Route } from 'react-router-dom'
 
-import HeaderWrap from '../components/Header';
-import HomePage from '../pages/HomePage';
-import FormElementsPage from '../pages/FormElementsPage';
-import LinksPage from '../pages/LinksPage';
-import ButtonsPage from '../pages/ButtonsPage';
-import FooterWrap from '../components/Footer';
-
+import HeaderWrap from '../components/Header'
+import HomePage from '../pages/HomePage'
+import FormElementsPage from '../pages/FormElementsPage'
+import LinksPage from '../pages/LinksPage'
+import ButtonsPage from '../pages/ButtonsPage'
+import FooterWrap from '../components/Footer'
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-`;
-
-
+`
 
 class Base extends Component {
-  render() {
+  render () {
     return (
       <Wrapper>
         <HeaderWrap />
@@ -32,7 +28,7 @@ class Base extends Component {
         </Switch>
         <FooterWrap />
       </Wrapper>
-    );
+    )
   }
 }
 

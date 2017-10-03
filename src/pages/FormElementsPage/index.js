@@ -1,6 +1,5 @@
-import React from 'react';
-import { Component } from 'react';
-import FormElements, {
+import React, { Component } from 'react'
+import {
   InputGroup,
   Label,
   Textfield,
@@ -11,12 +10,11 @@ import FormElements, {
   RadioWrapper,
   RadioInput,
   RadioControl,
-} from '../../components/FormElements';
-import Content from '../../components/Content';
-
+} from '../../components/FormElements'
+import Content from '../../components/Content'
 
 class FormElementsPage extends Component {
-  render() {
+  render () {
     return (
       <Content>
         <InputGroup>
@@ -37,14 +35,14 @@ class FormElementsPage extends Component {
         </InputGroup>
         <InputGroup>
           <Label>Radio</Label>
-          <RadioWrapper>  
+          <RadioWrapper>
             <RadioInput />
             <RadioControl />
             I am a radio
           </RadioWrapper>
         </InputGroup>
       </Content>
-    );
+    )
   }
 }
 
